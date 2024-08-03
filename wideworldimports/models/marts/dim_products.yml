@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_products
+    columns:
+    
+      - name: product_key
+        description: The surrogate key for stock_item_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: id
+        description: The natural key for stock_item_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: name
+        description: The name of the product

@@ -1,0 +1,10 @@
+POSTGRES_USER=postgres2
+POSTGRES_PASSWORD=postgres2
+POSTGRES_DB=wwi
+POSTGRES_CONTAINER_NAME=wwi
+POSTGRES_PORT=5438
+
+DBT_PROJECT_NAME=worldwideimports
+DBT_PROFILE_NAME=wwi 
+
+# Need to change profile name in 'dbt_project.yml' and 'profiles.yml'

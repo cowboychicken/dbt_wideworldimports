@@ -1,0 +1,32 @@
+version:  2
+
+models:
+  - name: dim_employees
+    columns:
+    
+      - name: employee_key
+        description: The surrogate key of the person_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: employee_id
+        description: The natural key of person_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: full_name
+        description: Employee full name
+
+      - name: is_employee
+        description: Status for whether person is an employee of not
+
+      - name: is_salesperson
+        description: Status for whether person is a sales person or not
+
+      - name: email_address
+        description: Email address of person
+
+      - name: last_edited_by
+        decription: Person that made last edit

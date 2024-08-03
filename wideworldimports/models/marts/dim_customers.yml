@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+    
+      - name: customer_key
+        description: The surrogate key of the customer_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description:  The natural key of the customer
+        data_tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description:  The name of the customer
+
+      - name: customer_category
+        description:  The cateogry type 
+
+      - name: buying_group
+        description:  The buying group type
+
+      - name: primary_contact_person
+        description: The primary contact person
+
+      - name: primary_contact_person_email
+        description: The primary contact person's email
+
+      - name: alternate_contact_person
+        description: The alternate contact person
+
+      - name: alternate_contact_person_email
+        description:  The alternate contact person's email
+
+      - name: delivery_method
+        description:  The delivery method for the customer
+
+      - name: delivery_address_line_1
+        description:  The delivery address line 1
+
+      - name: delivery_address_line_2
+        description:  The delivery address line 2
+
+      - name: delivery_postal_code
+        description:  The delivery postal code
+
+      - name: delivery_city
+        description:  The delivery city
+
+      - name: delivery_state
+        description:  The delivery state
+
+      - name: delivery_country
+        description:  The delivery country
+        
+      - name: delivery_country_region
+        description:  The delivery country region
+
+      - name: delivery_country_subregion
+        description:  The delivery country subregion
+
+      - name: website_url
+        description:  The customer's website url
+
+      - name: last_edited_by
+        description:  The name of the person who last edited

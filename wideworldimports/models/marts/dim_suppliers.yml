@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: dim_suppliers
+    columns:
+    
+      - name: supplier_key
+        description: The surrogate key of supplier_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: id
+        description: The natural id of supplier_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: name
+        description: The name of the supplier
+
+      - name: category
+        description: The cergory type of the supplier 
+
+      - name: primary_contact_person
+        description: The name of the primary contact for this supplier
+
+      - name: alternate_contact_person
+        description: The name of the alternate contact for this supplier
+
+      - name: delivery_method
+        description: The preferred delivery method for thi supplier 
+
+      - name: delivery_city
+        description: The default city for deliveries 
+
+      - name: reference
+        description: The reference number for this supplier 
+
+      - name: last_edited_by
+        description: The person who last edited this record
+

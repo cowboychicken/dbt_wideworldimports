@@ -1,0 +1,52 @@
+version: 2
+
+models: 
+  - name: fct_sales_orders
+    columns:
+
+      - name: sales_order_key
+        description: The surrogate key of orders.order_id and order_lines.order_line_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: The natural key of the order_id
+        data_tests:
+          - not_null
+
+      - name: order_line_id
+        description: The natural key of the order_line_id 
+        data_tests:
+          - not_null
+          - unique
+
+      - name: customer
+        description: The surrogate key of the customer
+
+      - name: product
+        description: The surrogate key of the product
+
+      - name: sales_person
+        description: The surrogate key of the sales person
+
+      - name: supplier
+        description: The surrogate key of the supplier
+
+      - name: quantity
+        description: the number of units of the product sold
+
+      - name: unit_price
+        description: the unite price of the product 
+
+      - name: description
+        description: additional description associated with this order
+
+      - name: customer_purchase_order_number
+        description: The PO number for this order
+
+      - name: order_date
+        description: The data this order was places
+
+      - name: expected_delivery_date
+        description: The expected delivery date for this order

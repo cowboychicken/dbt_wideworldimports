@@ -1,0 +1,13 @@
+wwi:
+  target: postgres
+  outputs:
+    postgres:  
+      type: postgres
+      host: localhost
+      user: postgres2
+      password: postgres2
+      port: 5438
+      dbname: wwi
+      schema: dbo
+      threads: 12
+      

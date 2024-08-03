@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+
+  - name: sales
+    database: wwi
+    tables:
+      - name: buying_groups
+      - name: customer_categories
+      - name: customer_transactions
+      - name: customers
+      - name: invoices
+      - name: invoice_lines
+      - name: order_lines
+      - name: orders
+      - name: special_deals
+
+  - name: application
+    database: wwi
+    tables:
+      - name: people
+      - name: cities
+      - name: countries
+      - name: delivery_methods
+      - name: payment_methods
+      - name: state_provinces
+      - name: system_parameters
+      - name: transaction_types
+
+  - name: warehouse
+    database: wwi
+    tables:
+      - name: colors
+      - name: package_types
+      - name: stock_groups
+      - name: stock_item_holdings
+      - name: stock_items_stock_groups
+      - name: stock_item_transactions
+      - name: stock_items
+
+  - name: purchasing
+    database: wwi
+    tables:
+      - name: purchase_order_lines
+      - name: purchase_orders
+      - name: supplier_categories
+      - name: supplier_transactions
+      - name: suppliers
+      
